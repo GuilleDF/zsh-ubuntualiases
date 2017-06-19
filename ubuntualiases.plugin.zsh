@@ -41,3 +41,5 @@ asi () {
     sudo apt install $(echo ${_search} | sed -n ${_pkg_num}p | awk '{print $1}')
   fi
 }
+
+compdef asi='apt install'
